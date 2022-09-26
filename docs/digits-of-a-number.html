@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Walk-through Digits of a number algorithm</title> 
+    <script type="text/javascript" src="https://e42.dev/c/assets/scripts/e42_all_min.js"></script> 
+    <link type="text/css" rel="stylesheet" href="https://e42.dev/c/assets/css/e42_all_min.css"></link>
+
+    <style type='text/css'>
+     ol.interactivities > li {
+       list-style: none;
+       margin-bottom: 2em;
+     }
+     .problemheading {
+       font-size: 1.4em;
+       font-weight: bold;
+       font-family: monospace;
+       border-top: thin dotted black;
+       padding-top: 0.4em;
+     }
+     body {
+       margin-left: 2em;
+       margin-right: 2em;
+       overflow-y: visible;
+       font-size: x-large;
+     }
+    </style>
+  </head>
+ 
+  <body>
+    <ol class='interactivities' id='interactivities'>
+      <li title='c-variable-operators-walkthrough-04' id='c-variable-operators-walkthrough-04'>
+        <div class='hc-included'>
+          <div>
+            <p>Walk-through of the Algorithm: Digits of a number.</p>
+            <div class='e42_walkthrough'>
+              <pre>
+  01 Read the number 
+  02 number = 125
+  03 If the number is zero go to step: 11.
+  04 Divide the number by ten and 
+     store the remainder. 
+  05 This gives you the digit which is present 
+     in the unit’s place.
+  06 R = number%10
+  07 Print the digit R.
+  08 Shorten the number by one digit 
+     by dividing the number by 10 and 
+     storing the quotient. 
+  09 number = floor(number/10)
+  10 Go to step 3.
+  11 Stop.
+                
+                
+
+            </pre>
+            <table style="font-size:x-large">
+              <tr>
+<th></th>
+<th>number</th>
+<th>R</th>
+<th>Output</th>
+              </tr>
+            </table>
+            <script>
+e42_walkthrough.setup.push([
+  {variable: "number", line: 2, answer: 125},
+  {gotoline: 4, line: 3},
+  {variable: "R", line: 8, answer: 5},
+  {variable: "Output", line: 9, answer: 5},
+  {variable: "number", line: 13, answer: 12},
+  {gotoline: 3, line: 14},
+  {gotoline: 4, line: 3},
+  {variable: "R", line: 8, answer: 2},
+  {variable: "Output", line: 9, answer: 2},
+  {variable: "number", line: 13, answer: 1},
+  {gotoline: 4, line: 3},
+  {variable: "R", line: 8, answer: 1},
+  {variable: "Output", line: 9, answer: 1},
+  {variable: "number", line: 13, answer: 0},
+  {gotoline: 15, line: 3}
+])  
+
+              </script>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <div class='vstreport'></div>
+  </body>
+</html>
